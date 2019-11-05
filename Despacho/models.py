@@ -2,12 +2,6 @@ from django.db import models
 from django.utils import timezone
 from django.utils.translation import ugettext as _
 
-class Meta:
-        permissions = (
-            ('profesor',_('Es profesor')),
-            ('alumno',_('Es alumno')),
-        )
-
 
 class Post(models.Model):
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
@@ -24,3 +18,9 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+    class Meta:
+        permissions = (
+            ('profesor',_('Es profesor')),
+            ('alumno',_('Es alumno')),
+        )
