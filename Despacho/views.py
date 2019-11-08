@@ -5,6 +5,9 @@ from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 from django.shortcuts import redirect
 
+def index(request):
+    return render(request, 'Despacho/index.html')
+
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'Despacho/post_detail.html', {'post': post})
