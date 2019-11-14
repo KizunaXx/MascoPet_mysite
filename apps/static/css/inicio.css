@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Raleway';
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.navegacion {
+    width: 100%;
+}
+
+.imagen {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    margin-bottom: 10px;
+}
+
+.navegacion nav ul li:hover {
+    background: #565656;
+}
+
+.navegacion nav {
+    width: 100%;
+    background: #E86611;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0px;
+}
+
+.navegacion nav ul {
+    list-style: none;
+    position: relative;
+}
+
+.navegacion nav>ul>li {
+    display: inline-block;
+}
+
+.navegacion nav>ul>li>a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+
+.navegacion nav>ul>li>a span {
+    font-size: 20px;
+    position: absolute;
+    bottom: -8px;
+    display: none;
+}
+
+.navegacion nav>ul>li:hover span {
+    display: block;
+}
+
+.navegacion nav ul li .submenu {
+    background: #fff;
+    padding: 20px;
+    position: absolute;
+    display: none;
+    -webkit-box-shadow: 0px 0px 5px 1px #565656;
+    -moz-box-shadow: 0px 0px 5px 1px #565656;
+    box-shadow: 0px 0px 5px 1px #565656;
+}
+
+.navegacion nav ul li:hover .submenu {
+    display: flex;
+}
+
+.navegacion nav ul li .submenu .submenu-items {
+    margin: 0 20px;
+}
+
+.navegacion nav ul li .submenu .submenu-items p {
+    font-weight: 600;
+    width: 110px;
+    display: block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #E86611;
+    margin-bottom: 10px;
+}
+
+.navegacion nav ul li .submenu .submenu-items a {
+    color: #565656;
+    text-decoration: none;
+    margin: 6px 0;
+    display: block;
+}
+
+.navegacion nav ul li .submenu .submenu-items a:hover {
+    background: #E86611;
+    color: #fff;
+}
+
+footer {
+    font-family: 'Jomolhari', serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    background: #E86611;
+}
+
+footer span {
+    font-size: large;
+}
+
+#ss {
+    margin-top: 15px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: #333231;
+}
+
+#ft {
+    margin-top: 10px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.main {
+    text-align: center;
+}
+
+#marcas {
+    width: auto;
+    margin: auto;
+}
+
+.ss {
+    margin-top: 0;
+    border-top: 0;
+}
