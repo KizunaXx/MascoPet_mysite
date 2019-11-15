@@ -7,3 +7,7 @@ class Cliente(models.Model):
     email = models.EmailField()
     telefono = models.CharField(max_length=20)
     direccion = models.TextField()
+
+    def __str__(self):
+        return '{}'.format(self.nombre)
+
