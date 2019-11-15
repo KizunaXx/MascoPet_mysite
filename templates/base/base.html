@@ -5,8 +5,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" >
 
     <link rel="stylesheet" href="{% static 'css/flexboxgrid.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/inicio.css' %}">
@@ -58,12 +60,34 @@
         </div>
     </header>
     {% endblock %}
-    <br> {% block content %}
-    <h5>este es el bloque header base</h5>
+
+    {% block content %}
     {% endblock %}
-    <br> {% block footer %}
-    <h5>este es el bloque footer base</h5>
+
+    {% block footer %}
+    <footer>
+        <div class="row center-xs">
+            <div class="col-xs">
+                <div class="social/bar" id="ss">
+                    <a href="https://www.instagram.com/maskopet.chi/" class="icon icon-instagram" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row center-xs">
+            <div class="col-xs">
+                <div class="col-xs">
+                    <h3>MASKOPET</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row center-xs" id="ft">
+            <div class="col-xs">
+                <span>Despacho Gratis V Región</span><br>
+                <span>Correo: maskopet.rv@atencion.cl</span><br>
+                <span>Telefono: +56 987817765 / 800 800 3000</span>
+            </div>
+        </div>
+    </footer>
     {% endblock %}
 </body>
-
 </html>
