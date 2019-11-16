@@ -1,0 +1,35 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td>No. Solicitud</td>
+                <td>Cliente </td>
+                <td>No. Productos</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% if object_list %}
+            {% for solicitud in object_list %}
+            <tr>
+                <td>{{ solicitud.id }}</td>
+                <td>{{ solicitud.nombre }}</td>
+                <td>{{ solicitud.numero_producto }}</td>
+                <td>
+                    <a class="btn btn-primary" href="{% url 'mascota_editar' productos.id %}">Editar</a>
+                    <a class="btn btn-danger" href="{% url 'mascota_eliminar' productos.id %}">Eliminar</a>
+                </td>
+                
+            </tr>
+
+            {% endfor %}
+
+            {% else %}
+            <h1>No hay registro de autos</h1>
+            {% endif %}
+        </tbody>
+
+    </table>
+{% endblock %}

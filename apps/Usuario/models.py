@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 class Cliente(models.Model):
@@ -10,4 +11,11 @@ class Cliente(models.Model):
 
     def __str__(self):
         return '{}'.format(self.nombre)
+
+
+
+class Solicitud(models.Model):
+    persona = models.ForeignKey(Cliente, null=True, blank=True, on_delete=models.CASCADE)
+    numero_producto = models.IntegerField()
+
 

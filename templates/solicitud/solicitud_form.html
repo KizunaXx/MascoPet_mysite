@@ -1,0 +1,49 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="form-group">
+                    <label for="{{form2.nombre.name}}">{{form2.nombre.label}}</label>
+                    {{form2.nombre}}
+                </div>
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+                <div class="form-group">
+                    <label for="{{form2.email.name}}">{{form2.email.label}}</label>
+                    {{form2.email}}
+                </div>
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+                    <div class="form-group">
+                        <label for="{{form2.telefono.name}}">{{form2.telefono.label}}</label>
+                        {{form2.telefono}}
+                    </div>
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+                    <div class="form-group">
+                        <label for="{{form2.direccion.name}}">{{form2.direccion.label}}</label>
+                        {{form2.direccion}}
+                    </div>
+            </div>
+
+            <div class="col-md-8 col-md-offset-2">
+                    <div class="form-group">
+                        <label for="{{form.numero_producto.name}}">{{form2.numero_producto.label}}</label>
+                        {{form.numero_producto}}
+                    </div>
+            </div>
+
+            <div class="col-md-8 col-md-offset-2">
+                    <div class="form-group">
+                        <button class="btn btn-primary"type="submit">guardar</button>
+
+                    </div>
+            </div>
+        </div>
+    </form>
+{% endblock %}
