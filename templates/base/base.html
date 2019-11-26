@@ -17,8 +17,9 @@
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <link rel="stylesheet" href="{% static 'css/cuenta.css' %}">
     <link rel="stylesheet" href="{% static 'carrusel/carrusel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/tabla.css' %}">
 
-    <title>{% block title %}MascoPet {% endblock %}</title>
+    <title>{% block title %} {% endblock %}</title>
 
 </head>
 
@@ -38,22 +39,21 @@
                                     <div class="submenu-items">
                                         <p>Alimentos</p>
                                         <ul>
-                                            <li><a href="Producto/">Gato</a></li>
-                                            <li><a href="Producto/">Perro</a></li>
-
+                                            <li><a href="/Producto/alimentosGatos">Gato</a></li>
+                                            <li><a href="/Producto/alimentosGatos">Perro</a></li>
                                         </ul>
                                     </div>
                                     <div class="submenu-items">
                                         <p>Accesorios</p>
                                         <ul>
-                                            <li><a href="Producto/">Gato</a></li>
-                                            <li><a href="Producto/">Perro</a></li>
+                                            <li><a href="/Producto/alimentosGatos">Gato</a></li>
+                                            <li><a href="/Producto/alimentosGatos">Perro</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </li>
                             <li><a href="cuenta/">Iniciar Sesión <span class="icon icon-up-dir"></span></a></li>
-                            <li><a href="nuevo/">Contacto <span class="icon icon-up-dir"></span></a></li>
+                            <li><a href="/Producto/listar">Listar <span class="icon icon-up-dir"></span></a></li>
                         </ul>
                     </nav>
                 </div>

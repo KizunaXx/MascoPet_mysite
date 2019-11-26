@@ -9,6 +9,9 @@ from apps.Producto.models import Producto
 def index(request):
     return render(request, 'despacho/index.html')
 
+def alimentosGatos(request):
+    return render(request, 'despacho/alimentosGatos.html')
+
 def mascota_view(request):
     if request.method == 'POST':
         form = MascotaForm(request.POST)
@@ -30,7 +33,7 @@ def mascota_edit(request, id_producto):
     if request.method == 'GET':
         form = MascotaForm(instance=producto)
     else:
-        form = MascotaForm(resquest.POST, instance=producto)
+        form = MascotaForm(request.POST, instance=producto)
         if form.is_valid():
             form.save()
         return redirect('mascota_listar')
@@ -39,7 +42,7 @@ def mascota_edit(request, id_producto):
 def mascota_delete(request, id_producto):
     producto = Producto.objects.get(id=id_producto)
     if request.method == 'POST':
-        Producto.delete()
+        producto.delete()
         return redirect('mascota_listar')
     return render(request, 'despacho/mascota_delete.html', {'productos':producto})
 
