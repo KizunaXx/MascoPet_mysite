@@ -4,9 +4,10 @@ from django.contrib.auth.forms import UserCreationForm
 from django.views.generic import CreateView
 from django.urls import reverse_lazy
 
+from apps.Registro.forms import RegistroForm
 
 class RegistroUsuario(CreateView):
     model = User
     template_name = 'registro/registro.html'
-    form_class = UserCreationForm
+    form_class = RegistroForm
     success_url = reverse_lazy('mascota_listar')

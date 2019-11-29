@@ -2,9 +2,26 @@
 {% load staticfiles %}
 
 {% block content %}
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">guardar</button>
-    </form>
+        <div class="contenedor-form">
+            <div class="toggle">
+                <span> Iniciar sesion</span>
+            </div>
+    
+            <div class="formulario">
+                
+                <h2>Crea tu Cuenta</h2>
+                
+                <form method="post">
+                    {% csrf_token %}
+                    {{form.as_p}}
+    
+                    <input type="submit" value="Registrarse">
+                </form>
+            </div>
+            <div class="reset-password">
+                <a href="#">Olvide mi Contraseña?</a>
+            </div>
+        </div>
+
+        <script src="{% static 'js/cuenta.js' %}"></script>
 {% endblock %}
