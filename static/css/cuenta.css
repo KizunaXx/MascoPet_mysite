@@ -1,6 +1,8 @@
 * {
     margin: 0;
-    padding: 0;s
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
 }
 
 body {
@@ -30,6 +32,7 @@ body {
 
 .navegacion nav ul li .submenu .submenu-items a:hover {
     background: #E86611;
+    color: #fff;
 }
 
 .navegacion nav>ul>li {
@@ -37,6 +40,7 @@ body {
 }
 
 .navegacion nav>ul>li>a {
+    color: #fff;
     text-decoration: none;
     display: block;
     padding: 20px;
@@ -91,9 +95,6 @@ body {
     background: #565656;
 }
 
-* {
-    box-sizing: border-box;
-}
 
 .imagen {
     border-bottom-left-radius: 60px;
@@ -111,7 +112,6 @@ footer {
 
 footer span {
     font-size: large;
-    color: #fff;
 }
 
 #ss {
@@ -276,10 +276,4 @@ footer span {
     padding: 3rem;
     border-radius: 1rem 0 0 1rem;
     box-shadow: 0 0 .5rem rgba(12, 12, 12, 0.466);
-}
-
-.button_pedir{
-    text-align: center;
-    background: #ff7300;
-    color: #FFF;
 }

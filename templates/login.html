@@ -1,5 +1,4 @@
 {% extends 'base/base.html' %}
-{% load staticfiles %}
 {%block header %}
 {% endblock %}
 {% block content %}
@@ -16,6 +15,9 @@
             <input for="username" type="password" placeholder="Contraseña" name="password">
             <input type="submit" value="Iniciar Sesión" name="Ingresar">
         </form>
+        <div class="reset-password">
+            <a href="{% url 'password_reset' %}">Olvide mi Contraseña?</a>
+        </div>
     </div>
 </div>
 
