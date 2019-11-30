@@ -4,6 +4,10 @@ from django.http import HttpResponse
 from apps.Producto.forms import MascotaForm
 from apps.Producto.models import Producto
 
+
+
+
+
 # Create your views here.
 
 def index(request):
@@ -24,9 +28,15 @@ def mascota_view(request):
     return render(request, 'despacho/mascota_form.html', {'form':form})
 
 def mascota_list(request):
-    producto = Producto.objects.all()
-    contexto = {'productos':producto}
-    return render(request, 'despacho/mascota_list.html', contexto)
+    user = request.user
+    if user.has_perm('Producto.profesor'):
+        producto = Producto.objects.all()
+        contexto = {'productos':producto}
+        return render(request, 'despacho/mascota_list.html', contexto)
+    else:
+        return render(request, 'despacho/alumno.html')
+
+    
 
 def mascota_edit(request, id_producto):
     producto = Producto.objects.get(id=id_producto)
