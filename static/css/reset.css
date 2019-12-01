@@ -1,0 +1,19 @@
+.reset{
+    color: black;
+}
+
+.reset-form{
+    color-adjust: black;
+}
+
+.button{
+    width: 100%;
+    background-color: rgb(247, 132, 0);
+    border: 1px solid #000;
+    color: white;
+    padding: 3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+}

@@ -1,7 +1,9 @@
 {% extends 'base/base.html' %}
 {% load staticfiles %}
 
-
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/reset.css' %}">
+{% endblock %}
 {% block content %}
 <section>
     <div>
@@ -47,38 +49,37 @@
                     <div>
                         <img src="{% static 'img/LataFelixPatePescaAtun156gr.jpg' %}" alt="">
                         <h2 class="h3-sect">Lata Feliz Pescado 156gr</h2>
-                        <h2>$14.800</h2><br>
+                        <h2>$900</h2><br>
                     </div>
                 </section>
                 <section class="imagenes columnas col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div>
                         <img src="{% static 'img/LataFelixTrocitosPollo156gr.jpg' %}" alt="">
                         <h2 class="h3-sect">Lata Felix Trocitos Pollo 156gr</h2>
-                        <h2>$13.900</h2><br>
+                        <h2>$900</h2><br>
                     </div>
                 </section>
                 <section class="imagenes columnas col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div>
                         <img src="{% static 'img/WhiskasSobrePollo85grs.jpg' %}" alt="">
                         <h2 class="h3-sect">Whiskas Sobre Pollo 85gr</h2>
-                        <h2>$21.000</h2><br>
+                        <h2>$450</h2><br>
                     </div>
                 </section>
                 <section class="imagenes  columnas col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div>
                         <img src="{% static 'img/WhiskasSobreSardina85grs.jpg' %}" alt="">
                         <h2 class="h3-sect">Whiskas Sobre Sardina 85gr</h2>
-                        <h2>$21.500</h2><br>
+                        <h2>$450</h2><br>
                     </div>
                 </section>
             </div>
         </div>
-        <span class="button_pedir">
-                <button>
-                        <a href="/Producto/nuevo">Pide tu Producto</a>
-                </button>
-        </span>
-
     </div>
+
+    <a class="button" href="/Producto/nuevo">Pide tu Producto</a>
+ 
+    
+
 </section>
 {% endblock %}

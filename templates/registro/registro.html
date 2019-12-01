@@ -1,4 +1,11 @@
 {% extends 'base/base.html' %}
+{% load staticfiles %}
+{% block head %}
+    
+    <link rel="stylesheet" href="{% static 'css/cuenta.css' %}">
+    
+{% endblock %}
+
 {% block content %}
  
 
@@ -10,13 +17,16 @@
             <div class="formulario">
                 
                 <h2>Crea tu Cuenta</h2>
-                
-                <form method="post">
-                    {% csrf_token %}
-                    {{form.as_p}}
-    
-                    <input type="submit" value="Registrarse">
-                </form>
+                    <form action="#" method="post">
+                        {% csrf_token %}
+                        <input for="username"type="text" placeholder="Nombre de Usuario" name="username">
+                        <input for="username"type="text" placeholder="Nombre" name="first_name">
+                        <input for="username"type="text" placeholder="Apellido" name="last_name">
+                        <input for="username"type="email" placeholder="email" name="email">
+                        <input for="username" type="password" placeholder="Contraseña" name="password1">
+                        <input for="username" type="password" placeholder="Confirme Contraseña" name="password2">
+                        <input type="submit" value="Registrarse">
+                    </form>
             </div>
         </div>
 {% endblock %}

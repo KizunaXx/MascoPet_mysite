@@ -13,6 +13,44 @@ body {
 .navegacion {
     width: 100%;
 }
+.navegacion nav ul li .submenu .submenu-items a:hover {
+    background: #E86611;
+    color: #fff;
+}
+
+.navegacion nav ul li .submenu {
+    background: #fff;
+    padding: 20px;
+    position: absolute;
+    display: none;
+    -webkit-box-shadow: 0px 0px 5px 1px #565656;
+    -moz-box-shadow: 0px 0px 5px 1px #565656;
+    box-shadow: 0px 0px 5px 1px #565656;
+}
+
+.navegacion nav ul li:hover .submenu {
+    display: flex;
+}
+
+.navegacion nav ul li .submenu .submenu-items {
+    margin: 0 20px;
+}
+
+.navegacion nav ul li .submenu .submenu-items p {
+    font-weight: 600;
+    width: 110px;
+    display: block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #E86611;
+    margin-bottom: 10px;
+}
+
+.navegacion nav ul li .submenu .submenu-items a {
+    color: #565656;
+    text-decoration: none;
+    margin: 6px 0;
+    display: block;
+}
 
 .imagen {
     border-bottom-left-radius: 60px;

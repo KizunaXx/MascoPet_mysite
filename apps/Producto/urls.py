@@ -11,7 +11,7 @@ router.register(r'groups', views.GroupViewSet)
  
 
 urlpatterns = [
-     path('', login_required (index),name='index'),
+     path('',(index),name='index'),
      path('alimentosGatos', login_required (alimentosGatos), name='alimentosGatos'),
      path('nuevo', login_required (mascota_view), name='mascota_crear'),
      path('listar', login_required (mascota_list), name='mascota_listar'),

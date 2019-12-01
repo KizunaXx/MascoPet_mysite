@@ -16,6 +16,17 @@ body {
     margin-bottom: 10px;
 }
 
+.button-pedir{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
 .navegacion nav ul li:hover {
     background: #565656;
 }
@@ -57,40 +68,6 @@ body {
 }
 
 .navegacion nav>ul>li:hover span {
-    display: block;
-}
-
-.navegacion nav ul li .submenu {
-    background: #fff;
-    padding: 20px;
-    position: absolute;
-    display: none;
-    -webkit-box-shadow: 0px 0px 5px 1px #565656;
-    -moz-box-shadow: 0px 0px 5px 1px #565656;
-    box-shadow: 0px 0px 5px 1px #565656;
-}
-
-.navegacion nav ul li:hover .submenu {
-    display: flex;
-}
-
-.navegacion nav ul li .submenu .submenu-items {
-    margin: 0 20px;
-}
-
-.navegacion nav ul li .submenu .submenu-items p {
-    font-weight: 600;
-    width: 110px;
-    display: block;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #E86611;
-    margin-bottom: 10px;
-}
-
-.navegacion nav ul li .submenu .submenu-items a {
-    color: #565656;
-    text-decoration: none;
-    margin: 6px 0;
     display: block;
 }
 
@@ -136,7 +113,3 @@ h2 {
     font-size: 10px;
 }
 
-.navegacion nav ul li .submenu .submenu-items a:hover {
-    background: #E86611;
-    color: #fff;
-}
