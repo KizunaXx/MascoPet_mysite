@@ -11,7 +11,7 @@ class MascotaForm(forms.ModelForm):
             'tipo',
             'cantidad',
             'precio',
-            'marca',
+            'direccion',
             'cliente',
         ]
         label = {
@@ -19,7 +19,7 @@ class MascotaForm(forms.ModelForm):
             'tipo' : 'Tipo',
             'cantidad' : 'Cantidad',
             'precio' : 'Precio',
-            'marca' : 'Marca',
+            'direccion' : 'Direccion',
             'cliente' : 'Cliente',
         }
         widgets={
@@ -27,6 +27,6 @@ class MascotaForm(forms.ModelForm):
             'tipo' : forms.TextInput(attrs={'class':'form-control'}),
             'cantidad' : forms.TextInput(attrs={'class':'form-control'}),            
             'precio' : forms.TextInput(attrs={'class':'form-control'}),
-            'marca' : forms.TextInput(attrs={'class':'form-control'}),
+            'direccion' : forms.TextInput(attrs={'class':'form-control'}),
             'cliente' : forms.Select(attrs={'class':'form-control'}),
         }
