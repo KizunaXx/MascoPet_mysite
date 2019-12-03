@@ -15,12 +15,12 @@ class MascotaForm(forms.ModelForm):
             'cliente',
         ]
         label = {
-            'nombre' : 'Nombre',
-            'tipo' : 'Tipo',
+            'nombre' : 'Nombre del Producto',
+            'tipo' : 'Tipo de Producto',
             'cantidad' : 'Cantidad',
             'precio' : 'Precio',
             'direccion' : 'Direccion',
-            'cliente' : 'Cliente',
+            'cliente' : 'Tipo de Cliente',
         }
         widgets={
             'nombre' : forms.TextInput(attrs={'class':'form-control'}),

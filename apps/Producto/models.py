@@ -11,7 +11,7 @@ class Producto(models.Model):
     tipo = models.CharField(max_length=20)
     cantidad = models.CharField(max_length=20)
     precio = models.IntegerField()
-    direccion = models.CharField(max_length=30)
+    direccion = models.CharField(max_length=500)
     cliente = models.ForeignKey(Cliente, null=True, blank=True, on_delete=models.CASCADE)
 
     class Meta:
